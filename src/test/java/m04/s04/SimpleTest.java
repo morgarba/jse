@@ -2,7 +2,7 @@ package m04.s04;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
-
+import static org.hamcrest.core.Is.is;
 import org.junit.jupiter.api.Test;
 
 class SimpleTest {
@@ -12,8 +12,8 @@ class SimpleTest {
         int value = 42;
         int expected = -42;
 
-        int result = simple.negate(value);
+        int actual = simple.negate(value);
 
-        assertThat(result, equalTo(expected));
+        assertThat(actual, is(equalTo(expected)));
     }
 }

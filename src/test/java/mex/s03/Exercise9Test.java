@@ -21,4 +21,18 @@ class Exercise9Test {
 
         assertThat(actual, is(expected));
     }
+    @Test
+    void negative() {
+        boolean actual = Exercise9.isPrime(-645);
+        boolean expected = false;
+
+        assertThat(actual, is(expected));
+    }
+    @Test
+    void negativeZero() {
+        boolean actual = Exercise9.isPrime(0);
+        boolean expected = false;
+
+        assertThat(actual, is(expected));
+    }
 }

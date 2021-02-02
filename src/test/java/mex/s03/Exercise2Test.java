@@ -21,4 +21,17 @@ class Exercise2Test {
 
         assertThat(actual, is(expected));
     }
-}
+    @Test
+    void isOddTrueNegative() {
+        boolean actual = Exercise2.isOdd(-549);
+        boolean expected = true;
+
+        assertThat(actual, is(expected));
+    }
+    @Test
+    void isOddFalsePositive() {
+        boolean actual = Exercise2.isOdd(468962);
+        boolean expected = false;
+
+        assertThat(actual, is(expected));
+    }}

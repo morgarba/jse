@@ -10,7 +10,6 @@ class Exercise3Test {
     void engineCapacityPlain() {
         double actual = Exercise3.engineCapacity(74, 75, 4);
         double expected = 1290.252;
-
         assertThat(actual, closeTo(expected, 0.001));
     }
 }

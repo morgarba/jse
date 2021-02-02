@@ -8,7 +8,10 @@ public class Exercise1 {
      * @return "positive", "negative", or "zero"
      */
     public static String checkSign(int value) {
-        // TODO
-        return "";
+       if (value > 0)
+        return "positive";
+       else if (value < 0)
+    	   return "negative";
+       else return "zero";
     }
 }

@@ -13,4 +13,11 @@ class Exercise8Test {
 
         assertThat(actual, is(expected));
     }
+    @Test
+    void sortPlainEquals() {
+        int[] expected = { 2, 2, 3 };
+        int[] actual = Exercise8.sort(3, 2, 2);
+
+        assertThat(actual, is(expected));
+    }
 }
