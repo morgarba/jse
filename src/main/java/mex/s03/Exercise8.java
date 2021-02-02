@@ -11,6 +11,8 @@ public class Exercise8 {
 	 */
 	public static int[] sort(int a, int b, int c) {
 		int[] result = new int[3];
+		
+		//rifare utilizzando Math.min 
 		if (a <= b && b <= c) {
 			result[0] = a;
 			result[1] = b;
